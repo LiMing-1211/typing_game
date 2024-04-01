@@ -24,10 +24,10 @@ function checkAnswer() {
     let input = document.getElementById('inputSentence').value.trim();
     let sentence = document.getElementById('sentence').textContent.trim();
     if (input === sentence) {
-        document.getElementById('result').textContent = 'Correct';
+        document.getElementById('result').textContent = '정답입니다!';
         setTimeout(getNextSentence, 3000);
     } else {
-        document.getElementById('result').textContent = 'Wrong answer';
+        document.getElementById('result').textContent = '오답입니다...';
         getNextSentence();
     }
     document.getElementById('inputSentence').value = '';
